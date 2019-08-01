@@ -72,11 +72,11 @@ public class Slingshot.Slingshot : Wingpanel.Indicator {
             var indicator_label = new Gtk.Label (_(" "));
             indicator_label.vexpand = true;
 
-            var indicator_icon = new Gtk.Image.from_icon_name ("system-search-symbolic", Gtk.IconSize.MENU);
+            var indicator_icon = new Gtk.Image.from_icon_name ("elementary_logo", Gtk.IconSize.MENU);
 
             indicator_grid = new Gtk.Grid ();
             indicator_grid.attach (indicator_icon, 0, 0, 1, 1);
-            indicator_grid.attach (indicator_label, 1, 0, 1, 1);
+            indicator_grid.attach (indicator_label, 0, 0, 1, 1);
             update_tooltip ();
 
             if (keybinding_settings != null) {
